@@ -1,0 +1,9 @@
+en:
+  signup_successful: "Thanks for signing up!  We've sent an email to confirm your address, and we'll be in touch when it gets closer to launch."
+  submit: "Sign up"
+  intro_mail:
+    subject: "Thanks for stopping by!"
+    header: "It's always great to meet new people"
+    content: "Which is why we're so happy to have had you stop by.  We have lots of exciting features and announcements coming up, which we'll share once the time is right."
+    salutation: "Have a great day"
+    from: "The developer(s) at Alphabeta"

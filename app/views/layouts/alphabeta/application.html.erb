@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Alphabeta</title>
+  <%= stylesheet_link_tag    "alphabeta/application", :media => "all" %>
+  <%= javascript_include_tag "alphabeta/application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <% if flash[:notice] %>
+    <p class="notice"><%= flash[:notice] %></p>
+  <% end %>
+
+  <%= yield %>
+</body>
+</html>

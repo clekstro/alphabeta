@@ -1,0 +1,10 @@
+<h1>Alphabeta Landing</h1>
+
+  <% @signup.errors.full_messages.each do |err| %>
+    <%= err %>
+  <% end %>
+
+<%= form_for @signup do |f| %>
+  <%= f.email_field :email %>
+  <%= f.submit I18n.t('submit') %>
+<% end %>
