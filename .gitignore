@@ -1,6 +1,7 @@
 .bundle/
 .DS_STORE
 .rvmrc
+*.gem
 log/*.log
 pkg/
 spec/dummy/db/*.sqlite3

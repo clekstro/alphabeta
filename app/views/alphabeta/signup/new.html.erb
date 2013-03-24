@@ -1,8 +1,13 @@
 <h1>Alphabeta Landing</h1>
 
-  <% @signup.errors.full_messages.each do |err| %>
-    <%= err %>
+<div class="notice">
+  <% if flash[:notice] %>
+    <%= flash[:notice] %>
   <% end %>
+</div>
+<% @signup.errors.full_messages.each do |err| %>
+  <%= err %>
+<% end %>
 
 <%= form_for @signup do |f| %>
   <%= f.email_field :email %>

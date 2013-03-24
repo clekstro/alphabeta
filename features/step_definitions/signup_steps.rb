@@ -18,6 +18,7 @@ Then(/^I should receive an email$/) do
 end
 
 Then(/^I should see a confirmation that it was sent$/) do
+  page.should have_content "Thanks for signing up!"
 end
 
 Then(/^I submit the form$/) do
