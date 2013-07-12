@@ -15,9 +15,15 @@ module Alphabeta
         SignupMailer.intro_mail(@signup.email).deliver
         flash[:notice] = I18n.t('signup_successful')
         redirect_to root_path
-      else 
+      else
         render action: 'new'
       end
+    end
+
+    private
+
+    def signup_params
+      params.require(:signup).permit(:email)
     end
   end
 end
